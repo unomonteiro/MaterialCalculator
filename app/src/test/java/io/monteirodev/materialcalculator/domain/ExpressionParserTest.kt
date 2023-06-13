@@ -20,7 +20,7 @@ class ExpressionParserTest {
             ExpressionPart.Number(3.0),
             ExpressionPart.Op(Operation.ADD),
             ExpressionPart.Number(5.0),
-            ExpressionPart.Op(Operation.SUBSTRACT),
+            ExpressionPart.Op(Operation.SUBTRACT),
             ExpressionPart.Number(3.0),
             ExpressionPart.Op(Operation.MULTIPLY),
             ExpressionPart.Number(4.0),
@@ -39,7 +39,7 @@ class ExpressionParserTest {
 
         val expected = listOf(
             ExpressionPart.Number(4.43),
-            ExpressionPart.Op(Operation.SUBSTRACT),
+            ExpressionPart.Op(Operation.SUBTRACT),
             ExpressionPart.Parentheses(ParenthesesType.Opening),
             ExpressionPart.Number(4.0),
             ExpressionPart.Op(Operation.MULTIPLY),
